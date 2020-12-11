@@ -6,16 +6,51 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body><!--
+    <div id="container">
+        <div id="header">
+            <div id="logo">Logo</div>
+            <div id="nav">Nav</div>
+        </div>
+        <div id="main">
+            <div id="texterecherche">
+                <div>TEXTE</div>
+                <div>RECHERCHE</div>
+            </div>
+            <div id="articles">
+                <div id="heb">
+                    <div id="img4">Img4</div>
+                    <div id="img5">Img5</div>
+                    <div id="img6">Img6</div>
+                    <div id="img7">Img7</div>
+                    <div id="img8">Img8</div>
+                    <div id="img9">Img9</div>
+                </div>
+                <div id="pop">
+                    <div id="img1">Img1</div>
+                    <div id="img2">Img2</div>
+                    <div id="img3">Img3</div>
+                </div>
+            </div>
+            <div id="act">
+                <div id="img10">Img10</div>
+                <div id="img11">Img11</div>
+                <div id="img12">Img12</div>
+                <div id="img13">Img13</div>
+                <div id="img14">Img14</div>
+                <div id="img15">Img15</div>
+            </div>
+        </div>
+    </div>-->
+    <header id="header">
         <img alt="Logo Reservia" src="src/Reservia.svg">
         <nav>
-            <a href="#hebergement">Hébergement</a>
-            <a href="#activites">Activités</a>
+            <a href="#heb">Hébergement</a>
+            <a href="#act">Activités</a>
             <a href="#">S'inscrire</a>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <header>
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
@@ -46,42 +81,8 @@
             </article>
             <i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i>
         </header>
-        <div>
-            <article>
-                <h3>Les plus populaires</h3>
-                <section>
-                    <img alt="Hôtel Le soleil du matin" src="src/images/small/emile_guillemot.jpg">
-                    <h4>Hôtel Le soleil du matin</h4>
-                    <p>Nuit à partir de 128€</p>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </section>
-                <section>
-                    <img alt="Au coeur de l'eau Chambres d'hôtes" src="src/images/small/aw_creative.jpg">
-                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                    <p>Nuit à partir de 71€</p>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </section>
-                <section>
-                    <img alt="Hôtel Tout bleu et blanc" src="src/images/small/febrian_zakaria.jpg">
-                    <h4>Hôtel Tout bleu et blanc</h4>
-                    <p>Nuit à partir de 68€</p>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </section>
-            </article>
-            <article id="hebergement">
-                <h3>Hébergement à Marseille</h3>
+        <div id="articles">
+            <article id="heb">
                 <section>
                     <img alt="Auberge de la Cannebière" src="src/images/medium/marcus_loc.jpg">
                     <h4>Auberge de la Cannebière</h4>
@@ -143,9 +144,40 @@
                     <i class="fas fa-star"></i>
                 </section>
             </article>
+            <article id="pop">
+                <section>
+                    <img alt="Hôtel Le soleil du matin" src="src/images/small/emile_guillemot.jpg">
+                    <h4>Hôtel Le soleil du matin</h4>
+                    <p>Nuit à partir de 128€</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </section>
+                <section>
+                    <img alt="Au coeur de l'eau Chambres d'hôtes" src="src/images/small/aw_creative.jpg">
+                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                    <p>Nuit à partir de 71€</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </section>
+                <section>
+                    <img alt="Hôtel Tout bleu et blanc" src="src/images/small/febrian_zakaria.jpg">
+                    <h4>Hôtel Tout bleu et blanc</h4>
+                    <p>Nuit à partir de 68€</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </section>
+            </article>
         </div>
-        <article id="activites">
-            <h3>Activités à Marseille</h3>
+        <article id="act">
             <section>
                 <img alt="Vieux Port" src="src/images/x-large/reno_laithienne.jpg">
                 <h4>Vieux Port</h4>
