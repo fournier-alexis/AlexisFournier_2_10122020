@@ -167,7 +167,6 @@ input[type="checkbox"]:checked + .checkbox:hover{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
-
 #articles h3{
     margin-top: 0;
 }
