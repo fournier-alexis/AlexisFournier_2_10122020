@@ -21,37 +21,39 @@
         <header>
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
-            <div id="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" id="saisie" name="saisie" value="Marseille, France" placeholder="Entrez une ville">
-                <label for="saisie"></label>
-                <button type="submit" name="recherche">Rechercher</button>
-            </div>
-            <article id="filtre">
-                <h4>Filtres</h4>
-                <input type="checkbox" id="economique" name="economique">
-                <label class="checkbox" for="economique">
-                    <i id="icon-check1" class="fas fa-money-bill-wave"></i>
-                    Économique
-                </label>
-                <input type="checkbox" id="familiale" name="familiale">
-                <label class="checkbox" for="familiale">
-                    <i id="icon-check2" class="fas fa-child"></i>
-                    Familiale
-                </label>
-                <input type="checkbox" id="romantique" name="romantique">
-                <label class="checkbox" for="romantique">
-                    <i id="icon-check3" class="fas fa-heart"></i>
-                    Romantique
-                </label>
-                <input type="checkbox" id="animaux" name="animaux">
-                <label class="checkbox" for="animaux">
-                    <i id="icon-check4" class="fas fa-dog"></i>
-                    Animaux
-                </label>
-            </article>
+            <form name="recherche" action="#" method="post">
+                <fieldset name="zone-saisie" id="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="saisie" name="saisie" value="Marseille, France" placeholder="Entrez une ville" autofocus>
+                    <label for="saisie"></label>
+                    <button type="submit" name="recherche">Rechercher</button>
+                </fieldset>
+                <fieldset name="filtre" id="filtre">
+                    <h4>Filtres</h4>
+                    <input type="checkbox" id="economique" name="economique">
+                    <label class="checkbox" for="economique">
+                        <i class="icon fas fa-money-bill-wave"></i>
+                        Économique
+                    </label>
+                    <input type="checkbox" id="familiale" name="familiale">
+                    <label class="checkbox" for="familiale">
+                        <i class="icon fas fa-child"></i>
+                        Familiale
+                    </label>
+                    <input type="checkbox" id="romantique" name="romantique">
+                    <label class="checkbox" for="romantique">
+                        <i class="icon fas fa-heart"></i>
+                        Romantique
+                    </label>
+                    <input type="checkbox" id="animaux" name="animaux">
+                    <label class="checkbox" for="animaux">
+                        <i class="icon fas fa-dog"></i>
+                        Animaux
+                    </label>
+                </fieldset>
+            </form>
             <i id="info" class="fas fa-info-circle"></i>
-            <label for="info">Plus de 500 logements sont disponibles dans cette ville</label>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
         <div id="articles">
             <div id="backheb">
@@ -134,7 +136,7 @@
             </div>
             <div id="backpop">
                 <h3>Les plus populaires</h3>
-                <article id="pop">
+                <aside id="pop">
                     <a href="#">
                         <div class="card">
                             <img alt="Hôtel Le soleil du matin" src="src/images/small/emile_guillemot.jpg">
@@ -156,7 +158,7 @@
                             <img alt="Au coeur de l'eau Chambres d'hôtes" src="src/images/small/aw_creative.jpg">
                             <div class="content">
                                 <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                                <p id="deux-lignes">Nuit à partir de 71€</p>
+                                <p>Nuit à partir de 71€</p>
                                 <span class="etoiles">
                                     <i class="fas fa-star blue"></i>
                                     <i class="fas fa-star blue"></i>
@@ -183,7 +185,7 @@
                             </div>
                         </div>
                     </a>
-                </article>
+                </aside>
             </div>
         </div>
         <h3 id="activite">Activités à Marseille</h3>
