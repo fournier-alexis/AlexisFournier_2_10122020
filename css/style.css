@@ -450,6 +450,11 @@ footer section a:hover{
 }
 
 
-@media all and (max-width: 375px){
+@media all and (min-width: 375px){
+    main{
+        margin: 0;
+    }
+    header{
 
+    }
 }
