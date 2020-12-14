@@ -10,8 +10,8 @@
 </head>
 <body>
     <header id="header">
-        <img alt="Logo Reservia" src="src/Reservia.svg">
         <nav>
+            <img alt="Logo Reservia" src="src/Reservia.svg">
             <a href="#hebergement">Hébergement</a>
             <a href="#activite">Activités</a>
             <a href="#">S'inscrire</a>
@@ -27,6 +27,9 @@
                     <input type="text" id="saisie" name="saisie" value="Marseille, France" placeholder="Entrez une ville" autofocus>
                     <label for="saisie"></label>
                     <button type="submit" name="recherche">Rechercher</button>
+                    <button type="submit" name="recherche">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </fieldset>
                 <fieldset name="filtre" id="filtre">
                     <h4>Filtres</h4>
@@ -48,7 +51,7 @@
                     <input type="checkbox" id="animaux" name="animaux">
                     <label class="checkbox" for="animaux">
                         <i class="icon fas fa-dog"></i>
-                        Animaux
+                        Animaux autorisés
                     </label>
                 </fieldset>
             </form>
