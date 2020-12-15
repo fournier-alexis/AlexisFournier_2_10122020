@@ -329,7 +329,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 #pop a p {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 #pop #deux-lignes p {
