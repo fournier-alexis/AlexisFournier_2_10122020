@@ -299,6 +299,10 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     display: grid;
     grid-template-rows: repeat(3, 210px);
 }
+#backpop h3 {
+    display: inline;
+    margin-right: 50%;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 .card {
     display: grid;
