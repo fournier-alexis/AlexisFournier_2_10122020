@@ -12,6 +12,7 @@
     <link href="css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <!--===== N A V I G A T I O N =====-->
     <header id="header">
         <nav>
             <img alt="Logo Reservia" src="src/Reservia.svg">
@@ -20,10 +21,13 @@
             <a href="#">S'inscrire</a>
         </nav>
     </header>
-    <main id="main">
+    <!--===== C O R P S =====-->
+    <main>
         <header>
+            <!--===== T I T R E S =====-->
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
+            <!--===== R E C H E R C H E =====-->
             <form name="recherche" action="#" method="post">
                 <fieldset name="zone-saisie" id="recherche">
                     <i class="fas fa-map-marker-alt"></i>
@@ -34,6 +38,7 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </fieldset>
+                <!--===== F I L T R E S =====-->
                 <fieldset name="filtre" id="filtre">
                     <h4>Filtres</h4>
                     <input type="checkbox" id="economique" name="economique">
@@ -58,13 +63,17 @@
                     </label>
                 </fieldset>
             </form>
+            <!--===== I N F O =====-->
             <i id="info" class="fas fa-info-circle"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </header>
+        <!--===== A R T I C L E S =====-->
         <div id="articles">
+            <!--===== H E B E R G E M E N T =====-->
             <div id="backheb">
-                <h3 id="hebergement">Hébergement à Marseille</h3>
+                <h3>Hébergement à Marseille</h3>
                 <article id="heb">
+                    <!--===== A F F I C H E  N° 1 =====-->
                     <a href="#">
                         <img alt="Auberge de la Cannebière" src="src/images/medium/marcus_loc.jpg">
                         <h4>Auberge de la Cannebière</h4>
@@ -77,6 +86,7 @@
                             <i class="fas fa-star grey"></i>
                         </span>
                     </a>
+                    <!--===== A F F I C H E  N° 2 =====-->
                     <a href="#">
                         <img alt="Hôtel du port" src="src/images/medium/fred_kebler.jpg">
                         <h4>Hôtel du port</h4>
@@ -89,6 +99,7 @@
                             <i class="fas fa-star blue"></i>
                         </span>
                     </a>
+                    <!--===== A F F I C H E  N° 3 =====-->
                     <a href="#">
                         <img alt="Hôtel Les mouettes" src="src/images/medium/reisetopia.jpg">
                         <h4>Hôtel Les mouettes</h4>
@@ -101,6 +112,7 @@
                             <i class="fas fa-star grey"></i>
                         </span>
                     </a>
+                    <!--===== A F F I C H E  N° 4 =====-->
                     <a href="#">
                         <img alt="Hôtel de la mer" src="src/images/medium/annie_sprat.jpg">
                         <h4>Hôtel de la mer</h4>
@@ -113,6 +125,7 @@
                             <i class="fas fa-star grey"></i>
                         </span>
                     </a>
+                    <!--===== A F F I C H E  N° 5 =====-->
                     <a href="#">
                         <img alt="Auberge Le panier" src="src/images/medium/nicate_lee.jpg">
                         <h4>Auberge Le panier</h4>
@@ -125,6 +138,7 @@
                             <i class="fas fa-star grey"></i>
                         </span>
                     </a>
+                    <!--===== A F F I C H E  N° 6 =====-->
                     <a href="#">
                         <img alt="Hôtel chez Amina" src="src/images/medium/febrian_zakaria.jpg">
                         <h4>Hôtel chez Amina</h4>
@@ -140,10 +154,12 @@
                 </article>
                 <h4 id="more">Afficher plus</h4>
             </div>
+            <!--===== P O P U L A I R E =====-->
             <div id="backpop">
                 <h3>Les plus populaires</h3>
                 <i class="fas fa-chart-line"></i>
                 <aside id="pop">
+                    <!--===== A F F I C H E  N° 1 =====-->
                     <a href="#">
                         <div class="card">
                             <img alt="Hôtel Le soleil du matin" src="src/images/small/emile_guillemot.jpg">
@@ -160,6 +176,7 @@
                             </div>
                         </div>
                     </a>
+                    <!--===== A F F I C H E  N° 2 =====-->
                     <a id="deux-lignes" href="#">
                         <div class="card">
                             <img alt="Au coeur de l'eau Chambres d'hôtes" src="src/images/small/aw_creative.jpg">
@@ -176,6 +193,7 @@
                             </div>
                         </div>
                     </a>
+                    <!--===== A F F I C H E  N° 3 =====-->
                     <a href="#">
                         <div class="card">
                             <img alt="Hôtel Tout bleu et blanc" src="src/images/small/febrian_zakaria.jpg">
@@ -195,34 +213,42 @@
                 </aside>
             </div>
         </div>
+        <!--===== A C T I V I T E S =====-->
         <h3 id="activite">Activités à Marseille</h3>
         <article id="act">
+            <!--===== A F F I C H E  N° 1 =====-->
             <a href="#">
                 <img alt="Vieux Port" src="src/images/x-large/reno_laithienne.jpg">
                 <h4>Vieux Port</h4>
             </a>
+            <!--===== A F F I C H E  N° 2 =====-->
             <a href="#">
                 <img alt="Fort de Pomègues" src="src/images/large/paul_hermann.jpg">
                 <h4>Fort de Pomègues</h4>
             </a>
+            <!--===== A F F I C H E  N° 3 =====-->
             <a href="#">
                 <img alt="Îles du Frioul" src="src/images/large/kevin_hikari.jpg">
                 <h4>Îles du Frioul</h4>
             </a>
+            <!--===== A F F I C H E  N° 4 =====-->
             <a href="#">
                 <img alt="Parc National des Calanques" src="src/images/x-large/kilyan_sockalingum.jpg">
                 <h4>Parc National des Calanques</h4>
             </a>
+            <!--===== A F F I C H E  N° 5 =====-->
             <a href="#">
                 <img alt="Notre-Dame-de-la-Garde" src="src/images/large/florian_wehde.jpg">
                 <h4>Notre-Dame-de-la-Garde</h4>
             </a>
+            <!--===== A F F I C H E  N° 6 =====-->
             <a href="#">
                 <img alt="Parc Longchamp" src="src/images/large/lena_paulin.jpg">
                 <h4>Parc Longchamp</h4>
             </a>
         </article>
     </main>
+    <!--===== P I E D S =====-->
     <footer>
         <section>
             <h4>A propos</h4>
