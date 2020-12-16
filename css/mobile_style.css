@@ -109,6 +109,12 @@ and (max-width: 852px) {
         width: fit-content;
         border-radius: 50px;
     }
+    /*Réduction de la taille des filtres pour firefox-----------------------------------------------------------------*/
+    @-moz-document url-prefix() {
+        #filtre label {
+            width: max-content;
+        }
+    }
     /*"Économique" en haut à gauche-----------------------------------------------------------------------------------*/
     #filtre input:first-of-type, #filtre label:first-of-type {
         grid-column: 1/2;
