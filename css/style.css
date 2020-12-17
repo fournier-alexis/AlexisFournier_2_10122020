@@ -13,12 +13,16 @@ body {
     font-family: 'Raleway', serif;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
-p, h4 {
+p, h2 {
     margin: 5px;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
-h3 {
+h1 {
+    font-size: larger;
     margin: 5% 0 5px 2%;
+}
+h2{
+    font-size: large;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
 main {
@@ -36,6 +40,7 @@ nav {
 /*Affichage du logo---------------------------------------------------------------------------------------------------*/
 nav img{
     grid-column: 1/6;
+    margin-left: 1%;
     padding: 20px 10px 10px 10px;
 }
 /*Style des liens cliquables------------------------------------------------------------------------------------------*/
@@ -49,14 +54,15 @@ nav a {
 /*"S'inscrire et étoile en bleu"------------------------------------------------------------------------------------------------*/
 nav a:last-of-type, .blue{
     color: var(--color-blue);
+    font-weight: bold;
 }
 /*On affhiche la bordure en bleu au survol----------------------------------------------------------------------------*/
 nav a:active:not(:last-of-type), nav a:hover:not(:last-of-type) {
     border-color: var(--color-blue);
-    color: var(--color-blue);;
+    color: var(--color-blue);
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
-header p, header h3 {
+header p, header h1 {
     margin: 10px 0 0 1%;
 }
 /*On affiche la recherche d'un seul block-----------------------------------------------------------------------------*/
@@ -92,8 +98,8 @@ header p, header h3 {
 /*Affichage du bouton "Rechercher"------------------------------------------------------------------------------------*/
 #recherche button {
     flex-grow: 1;
-    text-align: center;
-    padding: 0 20px 0 20px;
+    font-size: inherit;
+    padding: 0 10px 0 10px;
     color: var(--color-white);
     border: none;
     background-color: var(--color-blue);
@@ -121,7 +127,7 @@ header p, header h3 {
     padding: 0;
 }
 /*Style du titre "Filtres"--------------------------------------------------------------------------------------------*/
-#filtre h4 {
+#filtre h2 {
     font-size: 1.2em;
     padding: 10px 2% 0 0;
 }
@@ -132,7 +138,7 @@ header p, header h3 {
     padding: 10px 8% 10px 0;
     margin-right: 2%;
     border: solid 2px var(--color-light-gray);
-    border-radius: 50px 25px 25px 50px;
+    border-radius: 50px;
 }
 /*Survol d'une checkbox-----------------------------------------------------------------------------------------------*/
 .checkbox:hover, input[type="checkbox"]:checked + .checkbox  {
@@ -153,12 +159,16 @@ header p, header h3 {
     left: -3px;
     background-color: var(--color-light-blue);
     color: var(--color-blue);
-    padding: 15px;
+    padding: 14px;
     border-radius: 30px;
 }
 /*Style de l icon familial--------------------------------------------------------------------------------------------*/
 .fa-child {
-    padding: 15px 17px 15px 17px;
+    padding: 14px 18px 14px 18px;
+}
+/*Style de l icon economique--------------------------------------------------------------------------------------------*/
+.fa-money-bill-wave {
+    padding: 14px 13px 14px 13px;
 }
 /*Style au survol d'une checkbox sélectionné------------ -------------------------------------------------------------*/
 input[type="checkbox"]:checked + .checkbox:hover {
@@ -194,7 +204,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     margin-top: 2%;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
-#articles h3 {
+#articles h1 {
     margin-top: 0;
 }
 /*Hébergement à gauche------------------------------------------------------------------------------------------------*/
@@ -202,14 +212,15 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     grid-column: 1 / 3;
     background-color: var(--color-light-gray);
     border-radius: 15px;
-    padding: 2% 2% 2% 2%;
+    padding: 4% 2% 2% 2%;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
 #more {
     margin: 2% 0 0 1%;
 }
 /*Au survol des affiches----------------------------------------------------------------------------------------------*/
-#more:hover, #act a:hover, #heb a:hover h4, #heb a:hover p, #pop a:hover h4, #pop a:hover p {
+#more:hover, #act a:hover, #heb a:hover h2, #heb a:hover p, #pop a:hover h2, #pop a:hover p {
+    transform: scale(1.02);
     cursor: pointer;
     text-decoration: underline;
 }
@@ -219,7 +230,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     background-color: var(--color-light-gray);
     margin-left: 5%;
     border-radius: 15px;
-    padding: 5%;
+    padding: 8.5% 5% 5% 5%;
 }
 /*Les affiches d'hébergement sur 3 colonnes et 2 lignes---------------------------------------------------------------*/
 #heb {
@@ -239,7 +250,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
 #heb a p {
-    margin-bottom: 0;
+    margin-bottom: -10px;
 }
 /*Positionnement------------------------------------------------------------------------------------------------------*/
 #heb a:first-of-type {
@@ -278,14 +289,14 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     grid-template-rows: repeat(3, 210px);
 }
 /*Style du titre------------------------------------------------------------------------------------------------------*/
-#backpop h3 {
-    display: inline;
+#backpop h1 {
+    display: inline-block;
     margin-right: 50%;
 }
 /*On divise les affiches en deux--------------------------------------------------------------------------------------*/
 .card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 100%;
 }
 /*L'image à gauche----------------------------------------------------------------------------------------------------*/
@@ -294,7 +305,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
 }
 /*Le contenu à droite-------------------------------------------------------------------------------------------------*/
 .card .content {
-    grid-column: 2/3;
+    grid-column: 2/4;
 }
 /*Style des affiches--------------------------------------------------------------------------------------------------*/
 #pop a {
@@ -375,8 +386,13 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
     height: 90%;
 }
 /*Application d'une marge---------------------------------------------------------------------------------------------*/
-#act h4 {
+#act h2 {
     margin-left: 5%;
+    margin-top: 5%;
+}
+/*Application d'une marge---------------------------------------------------------------------------------------------*/
+#act a:nth-child(3) h2, #act a:nth-child(5) h2 {
+    margin-top: 2%;
 }
 /*Les images des affiches d'hébergement-------------------------------------------------------------------------------*/
 #heb img {
@@ -388,6 +404,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
 /*Les images des affiches populaires----------------------------------------------------------------------------------*/
 #pop img {
     object-fit: cover;
+    max-height: fit-content;
     width: 100%;
     height: 100%;
     border-radius: 15px 0 0 15px;
@@ -421,7 +438,7 @@ footer section {
 /*Affichage des sections en block-------------------------------------------------------------------------------------*/
 footer section a {
     display: block;
-    margin: 5px;
+    margin: 10px 5px 10px 5px;
     color: var(--color-black);
     text-decoration: none;
 }
