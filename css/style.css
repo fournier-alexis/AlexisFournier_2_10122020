@@ -291,7 +291,7 @@ input[type="checkbox"]:checked + .checkbox:hover .icon {
 /*Style du titre------------------------------------------------------------------------------------------------------*/
 #backpop h1 {
     display: inline-block;
-    margin-right: 50%;
+    margin-right: 45%;
 }
 /*On divise les affiches en deux--------------------------------------------------------------------------------------*/
 .card {
